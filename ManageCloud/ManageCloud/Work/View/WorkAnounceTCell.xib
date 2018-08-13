@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="WorkAnounceTCellID" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WorkAnounceTCell" customModule="ManageCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHorn" translatesAutoresizingMaskIntoConstraints="NO" id="r0I-Ip-Eel">
+                        <rect key="frame" x="16" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="NfR-XI-rm0"/>
+                            <constraint firstAttribute="width" constant="24" id="Phb-fi-AYB"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDX-k5-Isu">
+                        <rect key="frame" x="290" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="ngc-VO-Z6q"/>
+                            <constraint firstAttribute="height" constant="20" id="ud5-mP-L53"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="arrowRight"/>
+                        <connections>
+                            <action selector="selectMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CxV-Xd-HEN"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxu-L4-Kvw" customClass="GYRollingNoticeView" customModule="RollingNotice_Swift">
+                        <rect key="frame" x="48" y="11" width="234" height="23"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="lQn-AJ-ILZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZDX-k5-Isu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EK7-7a-Rxd"/>
+                    <constraint firstItem="ZDX-k5-Isu" firstAttribute="leading" secondItem="uxu-L4-Kvw" secondAttribute="trailing" constant="8" id="GYs-Ww-B8W"/>
+                    <constraint firstItem="r0I-Ip-Eel" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NMH-8D-C3m"/>
+                    <constraint firstAttribute="trailing" secondItem="ZDX-k5-Isu" secondAttribute="trailing" constant="10" id="Ogh-UV-5ks"/>
+                    <constraint firstItem="uxu-L4-Kvw" firstAttribute="leading" secondItem="r0I-Ip-Eel" secondAttribute="trailing" constant="8" id="Qpo-zb-s2d"/>
+                    <constraint firstItem="uxu-L4-Kvw" firstAttribute="centerY" secondItem="r0I-Ip-Eel" secondAttribute="centerY" id="dCQ-ko-Ogw"/>
+                    <constraint firstItem="r0I-Ip-Eel" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ofz-vS-Ylg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="rollingView" destination="uxu-L4-Kvw" id="5bU-Tg-hve"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowRight" width="20" height="20"/>
+        <image name="iconHorn" width="24" height="24"/>
+    </resources>
+</document>

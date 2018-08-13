@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    所有账户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1W-5J-oJH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="YHI-Rl-J1H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    账户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaA-u8-fEg">
+                    <rect key="frame" x="0.0" y="47" width="53" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjn-X3-scF">
+                    <rect key="frame" x="325" y="47" width="35" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x28-id-FgH">
+                    <rect key="frame" x="0.0" y="93" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="eHJ-s6-EYY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="x28-id-FgH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6wN-Pj-oGO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jaA-u8-fEg" secondAttribute="bottom" id="9xx-Yx-Sh5"/>
+                <constraint firstAttribute="bottom" secondItem="x28-id-FgH" secondAttribute="bottom" id="AJj-H5-t50"/>
+                <constraint firstItem="x28-id-FgH" firstAttribute="trailing" secondItem="f1W-5J-oJH" secondAttribute="trailing" id="FNU-Iq-rfx"/>
+                <constraint firstItem="pjn-X3-scF" firstAttribute="top" secondItem="f1W-5J-oJH" secondAttribute="bottom" id="FXp-az-soh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pjn-X3-scF" secondAttribute="bottom" id="KCT-Uw-DKi"/>
+                <constraint firstItem="jaA-u8-fEg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Sa4-fu-EJK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pjn-X3-scF" secondAttribute="trailing" constant="15" id="ZZ4-CK-KHQ"/>
+                <constraint firstItem="f1W-5J-oJH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eSX-z8-b4E"/>
+                <constraint firstItem="f1W-5J-oJH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iUt-sW-aun"/>
+                <constraint firstItem="f1W-5J-oJH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="rbI-c5-QSk"/>
+                <constraint firstItem="jaA-u8-fEg" firstAttribute="top" secondItem="f1W-5J-oJH" secondAttribute="bottom" id="waM-L8-01t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-13.5" y="-167"/>
+        </view>
+    </objects>
+</document>

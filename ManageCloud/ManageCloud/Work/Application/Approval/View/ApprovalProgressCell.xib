@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApprovalProgressCellID" rowHeight="100" id="3y8-Fh-8Nd" customClass="ApprovalProgressCell" customModule="ManageCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3y8-Fh-8Nd" id="HlD-3F-e39">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mb-wF-a7T">
+                        <rect key="frame" x="15" y="15" width="14" height="14"/>
+                        <color key="backgroundColor" red="0.60784313725490191" green="0.78823529411764703" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="EAa-wx-TCA"/>
+                            <constraint firstAttribute="height" constant="14" id="QQG-eI-lLE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qih-vx-kPC">
+                        <rect key="frame" x="21" y="34" width="2" height="65.5"/>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.78823529410000004" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="m0R-N3-fGV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李美丽同意了请假单，申请成功！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdg-Lm-jaI">
+                        <rect key="frame" x="39" y="10" width="326" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6sP-S9-vyH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年03月27日 23:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1e-jy-su7">
+                        <rect key="frame" x="39" y="40" width="321" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="6Qd-vU-zpd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                        <color key="textColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审批意见：很好很强大" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsd-XR-0bx">
+                        <rect key="frame" x="39" y="68" width="321" height="21.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gdg-Lm-jaI" firstAttribute="leading" secondItem="9Mb-wF-a7T" secondAttribute="trailing" constant="10" id="51a-wW-cd5"/>
+                    <constraint firstAttribute="bottom" secondItem="qih-vx-kPC" secondAttribute="bottom" id="5GK-e1-jxM"/>
+                    <constraint firstItem="gdg-Lm-jaI" firstAttribute="top" secondItem="HlD-3F-e39" secondAttribute="top" constant="10" id="5uO-gl-SfK"/>
+                    <constraint firstAttribute="bottom" secondItem="rsd-XR-0bx" secondAttribute="bottom" constant="10" id="CPq-Ka-yOg"/>
+                    <constraint firstItem="9Mb-wF-a7T" firstAttribute="leading" secondItem="HlD-3F-e39" secondAttribute="leading" constant="15" id="G9D-Ct-3xh"/>
+                    <constraint firstAttribute="trailing" secondItem="rsd-XR-0bx" secondAttribute="trailing" constant="15" id="HIn-9H-Ixz"/>
+                    <constraint firstAttribute="trailing" secondItem="P1e-jy-su7" secondAttribute="trailing" constant="15" id="QPy-sv-Q42"/>
+                    <constraint firstItem="P1e-jy-su7" firstAttribute="leading" secondItem="gdg-Lm-jaI" secondAttribute="leading" id="QvF-eA-Ew0"/>
+                    <constraint firstItem="9Mb-wF-a7T" firstAttribute="top" secondItem="HlD-3F-e39" secondAttribute="top" constant="15" id="aS9-M7-lqZ"/>
+                    <constraint firstAttribute="trailing" secondItem="gdg-Lm-jaI" secondAttribute="trailing" constant="10" id="d7H-EL-ZNz"/>
+                    <constraint firstItem="qih-vx-kPC" firstAttribute="centerX" secondItem="9Mb-wF-a7T" secondAttribute="centerX" id="ddG-lX-iWE"/>
+                    <constraint firstItem="rsd-XR-0bx" firstAttribute="leading" secondItem="P1e-jy-su7" secondAttribute="leading" id="esz-NW-DjJ"/>
+                    <constraint firstItem="rsd-XR-0bx" firstAttribute="top" secondItem="P1e-jy-su7" secondAttribute="bottom" constant="10" id="oK0-Az-YVe"/>
+                    <constraint firstItem="qih-vx-kPC" firstAttribute="top" secondItem="9Mb-wF-a7T" secondAttribute="bottom" constant="5" id="wbd-33-4Un"/>
+                    <constraint firstItem="P1e-jy-su7" firstAttribute="top" secondItem="gdg-Lm-jaI" secondAttribute="bottom" constant="10" id="zka-QZ-wu3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="approvalLabel" destination="rsd-XR-0bx" id="L7r-QL-BjJ"/>
+                <outlet property="timeLabel" destination="P1e-jy-su7" id="hy2-mR-7zQ"/>
+                <outlet property="titleLabel" destination="gdg-Lm-jaI" id="ntg-jc-ZU9"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="104"/>
+        </tableViewCell>
+    </objects>
+</document>

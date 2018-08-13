@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="EndApplicationListViewCell" customModule="ManageCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeF-pk-amk">
+                        <rect key="frame" x="15" y="15" width="345" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="COB-2v-Wh9"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="48" id="v2m-LP-xmA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李美丽创建于 2018-08-23 12:33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYa-zU-KFb">
+                        <rect key="frame" x="15" y="49" width="345" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eac-vL-ily"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的审批:通过" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6K-eb-Riv">
+                        <rect key="frame" x="15" y="73" width="345" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="YeR-JJ-aNS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TeF-pk-amk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0X1-aO-sSe"/>
+                    <constraint firstItem="TeF-pk-amk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5DK-dk-sHh"/>
+                    <constraint firstItem="gYa-zU-KFb" firstAttribute="top" secondItem="TeF-pk-amk" secondAttribute="bottom" constant="10" id="5TZ-p1-iny"/>
+                    <constraint firstAttribute="trailing" secondItem="TeF-pk-amk" secondAttribute="trailing" constant="15" id="GiM-Qj-PHx"/>
+                    <constraint firstItem="D6K-eb-Riv" firstAttribute="top" secondItem="gYa-zU-KFb" secondAttribute="bottom" constant="4" id="MlU-ia-Lvm"/>
+                    <constraint firstItem="gYa-zU-KFb" firstAttribute="leading" secondItem="TeF-pk-amk" secondAttribute="leading" id="Vyf-Q7-Ab2"/>
+                    <constraint firstItem="D6K-eb-Riv" firstAttribute="leading" secondItem="gYa-zU-KFb" secondAttribute="leading" id="a0k-ob-b9D"/>
+                    <constraint firstAttribute="bottom" secondItem="D6K-eb-Riv" secondAttribute="bottom" constant="18.5" id="fSn-nk-B4w"/>
+                    <constraint firstItem="D6K-eb-Riv" firstAttribute="trailing" secondItem="gYa-zU-KFb" secondAttribute="trailing" id="gFP-b0-rKn"/>
+                    <constraint firstItem="gYa-zU-KFb" firstAttribute="trailing" secondItem="TeF-pk-amk" secondAttribute="trailing" id="kwX-SM-lby"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="creatTime" destination="gYa-zU-KFb" id="1PI-QV-HbI"/>
+                <outlet property="flowStateLabel" destination="D6K-eb-Riv" id="f2y-qZ-Zkb"/>
+                <outlet property="titleLB" destination="TeF-pk-amk" id="AtG-Qe-SRs"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SignImageCCellID" id="gTV-IL-0wX" customClass="SignImageCCell" customModule="ManageCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="83" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="83" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-G9-FE6">
+                        <rect key="frame" x="0.0" y="5" width="78" height="59"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZx-qk-2eS">
+                        <rect key="frame" x="63" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Uik-Sh-ViL"/>
+                            <constraint firstAttribute="height" constant="20" id="kd3-2u-KaZ"/>
+                        </constraints>
+                        <state key="normal" image="iconDeletePhoto"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yZx-qk-2eS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5W4-2b-fH3"/>
+                <constraint firstAttribute="trailing" secondItem="ldg-G9-FE6" secondAttribute="trailing" constant="5" id="60u-dk-2nl"/>
+                <constraint firstItem="ldg-G9-FE6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="9is-kh-yC7"/>
+                <constraint firstAttribute="trailing" secondItem="yZx-qk-2eS" secondAttribute="trailing" id="VuB-6s-Mm6"/>
+                <constraint firstItem="ldg-G9-FE6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qOO-f0-ZMc"/>
+                <constraint firstAttribute="bottom" secondItem="ldg-G9-FE6" secondAttribute="bottom" id="wc2-JE-9GB"/>
+            </constraints>
+            <connections>
+                <outlet property="delBtn" destination="yZx-qk-2eS" id="Ym0-Yj-dVh"/>
+                <outlet property="imgV" destination="ldg-G9-FE6" id="fGZ-Wg-4Eu"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconDeletePhoto" width="20" height="20"/>
+    </resources>
+</document>
